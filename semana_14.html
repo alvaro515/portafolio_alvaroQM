@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Semana 14 - Backend con Python y Flask</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>Semana 14: Backend con Python y Flask</h1>
+  <nav>
+    <a href="index.html">Portada</a>
+    <a href="semana_10.html">Semana 10</a>
+    <a href="semana_13.html">Semana 13</a>
+    <a href="semana_14.html" class="active">Semana 14</a>
+  </nav>
+</header>
+
+<main>
+  <section class="card">
+    <h2>Python y Flask</h2>
+
+    <h3>¿Qué es Python?</h3>
+    <p>
+      <strong>Python</strong> es un lenguaje de programación sencillo,
+      poderoso y muy usado en backend, ciencia de datos e inteligencia artificial.
+    </p>
+
+    <h3>¿Qué es Flask?</h3>
+    <p>
+      <strong>Flask</strong> es un microframework de Python para crear aplicaciones web
+      ligeras, rápidas y fáciles de entender.
+    </p>
+
+    <h3>Características de Flask</h3>
+    <ul>
+      <li>Minimalista y flexible</li>
+      <li>Ideal para APIs</li>
+      <li>Fácil integración con bases de datos</li>
+      <li>Perfecto para proyectos pequeños y medianos</li>
+    </ul>
+
+    <h3>Ejemplo Básico en Flask</h3>
+    <pre><code>
+from flask import Flask
+
+app = Flask(__name__)
+
+@app.route("/")
+def inicio():
+    return "Hola desde Flask"
+
+if __name__ == "__main__":
+    app.run(debug=True)
+    </code></pre>
+
+    <h3>Flask y APIs</h3>
+    <p>
+      Flask se usa mucho para crear APIs REST que devuelven datos en formato JSON,
+      ideales para conectar con frontend modernos.
+    </p>
+
+    <h3>Conclusión</h3>
+    <p>
+      Flask es como un backend zen: pequeño, claro y directo.
+      Python piensa, Flask ejecuta.
+    </p>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2025 Alvaro Quintanilla</p>
+</footer>
+
+</body>
+</html>

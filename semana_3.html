@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Semana 3 - Bootstrap y Tailwind CSS</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Cabecera -->
+  <header>
+    <h1>Semana 3: Bootstrap y Tailwind CSS</h1>
+    <nav>
+      <a href="index.html">Portada</a>
+      <a href="semana_1.html">Semana 1</a>
+      <a href="semana_2.html">Semana 2</a>
+      <a href="semana_3.html" class="active">Semana 3</a>
+      <a href="semana_4.html">Semana 4</a>
+    </nav>
+  </header>
+
+  <!-- Contenido Principal -->
+  <main>
+    <section class="card">
+      <h2>Teoría y Conceptos de la Semana</h2>
+
+      <h3>1. Bootstrap</h3>
+      <p><strong>Bootstrap</strong> es uno de los frameworks más populares para crear sitios web responsivos. Fue desarrollado por **Twitter** y proporciona un conjunto de herramientas para construir aplicaciones web modernas con HTML, CSS y JavaScript.</p>
+      
+      <h4>¿Qué es Bootstrap?</h4>
+      <p>Es un **framework CSS y JavaScript** que facilita el diseño de sitios web responsivos. Proporciona una serie de **componentes predefinidos** como botones, formularios, cuadrículas (grids) y mucho más. Todo ello con el objetivo de acelerar el proceso de desarrollo y mantener la coherencia en el diseño.</p>
+      
+      <h4>¿Cómo instalar Bootstrap?</h4>
+      <p>Hay varias formas de incluir Bootstrap en tu proyecto. Aquí te muestro dos de las más comunes:</p>
+      
+      <ul>
+        <li><strong>Usando un CDN (Content Delivery Network):</strong> Esta es la forma más fácil y rápida de agregar Bootstrap a tu proyecto. Solo necesitas incluir los enlaces a los archivos CSS y JS en tu archivo HTML:</li>
+        <pre>
+          <code>
+            &lt;link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"&gt;
+            &lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"&gt;&lt;/script&gt;
+            &lt;script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"&gt;&lt;/script&gt;
+          </code>
+        </pre>
+        
+        <li><strong>Usando npm (Node Package Manager):</strong> Si prefieres gestionar las dependencias con npm, puedes instalar Bootstrap ejecutando:</li>
+        <pre>
+          <code>
+            npm install bootstrap
+          </code>
+        </pre>
+      </ul>
+
+      <h4>Componentes Principales de Bootstrap</h4>
+      <p>Bootstrap ofrece una gran cantidad de **componentes predefinidos**, que te permiten crear rápidamente interfaces de usuario atractivas y funcionales. Algunos de los más importantes incluyen:</p>
+      <ul>
+        <li><strong>Cuadrícula (Grid):</strong> Bootstrap usa un sistema de cuadrícula basado en filas y columnas, que facilita el diseño de páginas web responsivas. Con la cuadrícula de Bootstrap, puedes dividir tu página en hasta 12 columnas. Aquí tienes un ejemplo de su uso:</li>
+        <pre>
+          <code>
+            &lt;div class="container"&gt;
+              &lt;div class="row"&gt;
+                &lt;div class="col-sm-4"&gt;Columna 1&lt;/div&gt;
+                &lt;div class="col-sm-4"&gt;Columna 2&lt;/div&gt;
+                &lt;div class="col-sm-4"&gt;Columna 3&lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          </code>
+        </pre>
+        
+        <li><strong>Botones:</strong> Los botones de Bootstrap tienen un diseño limpio y se pueden personalizar con clases como <code>.btn-primary</code>, <code>.btn-secondary</code>, etc. Ejemplo:</li>
+        <pre>
+          <code>
+            &lt;button class="btn btn-primary"&gt;Botón Principal&lt;/button&gt;
+            &lt;button class="btn btn-secondary"&gt;Botón Secundario&lt;/button&gt;
+          </code>
+        </pre>
+        
+        <li><strong>Formularios:</strong> Los formularios en Bootstrap son fáciles de usar y se adaptan automáticamente a diferentes tamaños de pantalla. Ejemplo:</li>
+        <pre>
+          <code>
+            &lt;form&gt;
+              &lt;div class="form-group"&gt;
+                &lt;label for="email"&gt;Email address&lt;/label&gt;
+                &lt;input type="email" class="form-control" id="email" placeholder="Enter email"&gt;
+              &lt;/div&gt;
+              &lt;button type="submit" class="btn btn-primary"&gt;Submit&lt;/button&gt;
+            &lt;/form&gt;
+          </code>
+        </pre>
+      </ul>
+
+      <h4>Beneficios de Bootstrap</h4>
+      <ul>
+        <li><strong>Rápido desarrollo:</strong> Con sus componentes predefinidos, puedes crear aplicaciones y sitios web rápidamente.</li>
+        <li><strong>Responsividad:</strong> El sistema de cuadrícula se adapta automáticamente a diferentes tamaños de pantalla.</li>
+        <li><strong>Documentación completa:</strong> Bootstrap tiene una documentación extensa que facilita su aprendizaje y uso.</li>
+        <li><strong>Compatibilidad con todos los navegadores:</strong> Bootstrap está diseñado para funcionar bien en la mayoría de los navegadores.</li>
+      </ul>
+
+      <h3>2. Tailwind CSS</h3>
+      <p><strong>Tailwind CSS</strong> es un framework de utilidad-first para CSS, lo que significa que en lugar de escribir reglas CSS personalizadas, puedes aplicar clases de utilidad directamente en el HTML. A diferencia de Bootstrap, que ofrece componentes prediseñados, con Tailwind puedes crear diseños a medida de una manera más flexible.</p>
+
+      <h4>¿Cómo instalar Tailwind CSS?</h4>
+      <p>Para empezar con Tailwind, primero necesitas instalarlo en tu proyecto. Puedes hacerlo de varias maneras:</p>
+      
+      <ul>
+        <li><strong>Usando un CDN:</strong> Es la forma más rápida y sencilla de empezar con Tailwind. Solo necesitas agregar el siguiente enlace a tu archivo HTML:</li>
+        <pre>
+          <code>
+            &lt;link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.1.2/dist/tailwind.min.css" rel="stylesheet"&gt;
+          </code>
+        </pre>
+        
+        <li><strong>Usando npm:</strong> Para proyectos más complejos, puedes instalar Tailwind usando npm:</li>
+        <pre>
+          <code>
+            npm install tailwindcss
+          </code>
+        </pre>
+      </ul>
+
+      <h4>Características Principales de Tailwind CSS</h4>
+      <p>Tailwind CSS es un framework muy flexible que te permite personalizar tu diseño de manera detallada, aplicando clases de utilidad directamente al HTML. A continuación te muestro algunos ejemplos:</p>
+      
+      <ul>
+        <li><strong>Aplicación de colores y estilos:</strong></li>
+        <pre>
+          <code>
+            &lt;div class="bg-blue-500 text-white p-4 rounded-lg"&gt;
+              &lt;p&gt;Este es un div con fondo azul, texto blanco, padding y bordes redondeados.&lt;/p&gt;
+            &lt;/div&gt;
+          </code>
+        </pre>
+        
+        <li><strong>Diseños responsivos:</strong> Tailwind te permite crear diseños adaptativos usando clases como <code>sm:</code>, <code>md:</code>, <code>lg:</code>, etc. Ejemplo:</li>
+        <pre>
+          <code>
+            &lt;div class="sm:w-full md:w-1/2 lg:w-1/3"&gt;
+              Este div ocupará el 100% de ancho en pantallas pequeñas, el 50% en medianas y el 33% en pantallas grandes.
+            &lt;/div&gt;
+          </code>
+        </pre>
+      </ul>
+
+      <h4>Beneficios de Tailwind CSS</h4>
+      <ul>
+        <li><strong>Flexibilidad:</strong> Con Tailwind puedes diseñar cualquier cosa sin preocuparte por las restricciones de los componentes predefinidos.</li>
+        <li><strong>Mayor control:</strong> Te da más control sobre el diseño, permitiendo personalizar cada aspecto del sitio.</li>
+        <li><strong>Rápida iteración:</strong> Usar clases de utilidad permite hacer cambios rápidamente sin tener que escribir código CSS adicional.</li>
+        <li><strong>Personalización fácil:</strong> Puedes personalizar Tailwind a tu gusto modificando el archivo de configuración para crear tu propio sistema de diseño.</li>
+      </ul>
+
+      <h4>Comparación entre Bootstrap y Tailwind CSS</h4>
+      <ul>
+        <li><strong>Flexibilidad:</strong> Tailwind es más flexible, ya que puedes crear cualquier diseño desde cero, mientras que Bootstrap ofrece un conjunto de componentes ya predefinidos.</li>
+        <li><strong>Rapidez de desarrollo:</strong> Bootstrap es ideal para desarrollar aplicaciones rápidamente con componentes listos para usar, mientras que Tailwind requiere un poco más de trabajo para configurar los estilos.</li>
+        <li><strong>Personalización:</strong> Tailwind permite más control sobre la personalización, mientras que Bootstrap tiene un sistema de componentes más rígido.</li>
+      </ul>
+
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Alvaro Quintanilla</p>
+  </footer>
+
+</body>
+</html>

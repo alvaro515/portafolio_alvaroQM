@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Semana 13 - Backend con PHP y Laravel</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>Semana 13: Backend con PHP y Laravel</h1>
+  <nav>
+    <a href="index.html">Portada</a>
+    <a href="semana_10.html">Semana 10</a>
+    <a href="semana_13.html" class="active">Semana 13</a>
+    <a href="semana_14.html">Semana 14</a>
+  </nav>
+</header>
+
+<main>
+  <section class="card">
+    <h2>PHP y Laravel</h2>
+
+    <h3>¿Qué es PHP?</h3>
+    <p>
+      <strong>PHP</strong> es un lenguaje de programación del lado del servidor,
+      muy usado para desarrollar aplicaciones web dinámicas.
+    </p>
+
+    <h3>¿Qué es Laravel?</h3>
+    <p>
+      <strong>Laravel</strong> es un framework de PHP que facilita el desarrollo backend
+      usando el patrón <strong>MVC (Modelo – Vista – Controlador)</strong>.
+    </p>
+
+    <h3>Ventajas de Laravel</h3>
+    <ul>
+      <li>Organización clara del código</li>
+      <li>Rutas simples y elegantes</li>
+      <li>ORM Eloquent para base de datos</li>
+      <li>Seguridad integrada</li>
+    </ul>
+
+    <h3>Estructura MVC</h3>
+    <pre><code>
+Modelo      → Maneja datos y base de datos
+Vista       → Interfaz de usuario
+Controlador → Lógica del negocio
+    </code></pre>
+
+    <h3>Ejemplo de Ruta en Laravel</h3>
+    <pre><code>
+Route::get('/saludo', function () {
+    return 'Hola desde Laravel';
+});
+    </code></pre>
+
+    <h3>Ejemplo de Controlador</h3>
+    <pre><code>
+class UsuarioController extends Controller {
+    public function index() {
+        return "Lista de usuarios";
+    }
+}
+    </code></pre>
+
+    <h3>Conclusión</h3>
+    <p>
+      Laravel convierte el backend en una experiencia ordenada,
+      segura y elegante. Es PHP, pero con traje y corbata.
+    </p>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2025 Alvaro Quintanilla</p>
+</footer>
+
+</body>
+</html>

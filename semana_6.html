@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Semana 6 - React, Node.js y Vite</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Cabecera -->
+  <header>
+    <h1>Semana 6: React, Node.js y Vite</h1>
+    <nav>
+      <a href="index.html">Portada</a>
+      <a href="semana_1.html">Semana 1</a>
+      <a href="semana_2.html">Semana 2</a>
+      <a href="semana_3.html">Semana 3</a>
+      <a href="semana_4.html">Semana 4</a>
+      <a href="semana_5.html">Semana 5</a>
+      <a href="semana_6.html" class="active">Semana 6</a>
+    </nav>
+  </header>
+
+  <!-- Contenido Principal -->
+  <main>
+    <section class="card">
+      <h2>Teoría y Conceptos de la Semana</h2>
+
+      <h3>1. React</h3>
+      <p><strong>React</strong> es una librería de JavaScript desarrollada por **Facebook** que se utiliza para construir interfaces de usuario, especialmente aplicaciones web interactivas. React es muy popular porque permite crear aplicaciones web dinámicas con un rendimiento excelente, gracias a su sistema de renderizado eficiente.</p>
+
+      <h4>¿Para qué sirve React?</h4>
+      <p>React es ideal para desarrollar aplicaciones **single-page** (SPA), donde el contenido de la página se actualiza dinámicamente sin necesidad de recargar toda la página. Esto mejora la experiencia del usuario, haciendo que la interacción con la web sea más fluida.</p>
+      <p>Con React, puedes crear componentes reutilizables que encapsulan tanto la **estructura** (HTML), la **lógica** (JavaScript) y el **estilo** (CSS) de las distintas partes de tu interfaz. Esto facilita la organización del código y hace que sea más fácil mantener y actualizar las aplicaciones.</p>
+
+      <h4>¿Cómo instalar React?</h4>
+      <p>Para empezar a usar React, lo primero que necesitas es instalar **Node.js** en tu computadora. Luego, puedes instalar **React** a través de **npm** (Node Package Manager), que es el gestor de dependencias más utilizado en proyectos JavaScript.</p>
+
+      <h5>Paso a paso para instalar React:</h5>
+      <ol>
+        <li><strong>Instalar Node.js</strong>: Ve a <a href="https://nodejs.org" target="_blank">nodejs.org</a> y descarga la versión recomendada para tu sistema operativo. Node.js incluye npm, así que no necesitas instalarlo por separado.</li>
+        <li><strong>Crear un nuevo proyecto con React</strong>: Una vez que tengas Node.js instalado, abre tu terminal (o línea de comandos) y ejecuta el siguiente comando para crear una nueva aplicación con React:</li>
+        <pre><code>npx create-react-app mi-app</code></pre>
+        <p>Esto creará una nueva carpeta llamada **mi-app** con todos los archivos necesarios para empezar a trabajar en tu proyecto.</p>
+        <li><strong>Iniciar la aplicación</strong>: Entra en el directorio de tu proyecto recién creado con el siguiente comando:</li>
+        <pre><code>cd mi-app</code></pre>
+        <p>Luego, ejecuta este comando para iniciar la aplicación:</p>
+        <pre><code>npm start</code></pre>
+        <p>Esto abrirá tu aplicación en el navegador en <code>http://localhost:3000</code> y podrás empezar a editarla.</p>
+      </ol>
+
+      <h4>Componentes en React</h4>
+      <p>React se basa en componentes, que son bloques reutilizables de código que contienen la lógica y la vista de la aplicación. Los componentes pueden ser **funcionales** o **de clase**. Sin embargo, desde la introducción de los **hooks** en React 16.8, los componentes funcionales son los más utilizados.</p>
+
+      <p><strong>Ejemplo de un componente funcional en React:</strong></p>
+      <pre>
+        <code>
+          import React from 'react';
+
+          function Saludo(props) {
+            return &lt;h1&gt;Hola, {props.nombre}&lt;/h1&gt;
+          }
+
+          export default Saludo;
+        </code>
+      </pre>
+
+      <p>Este es un componente llamado **Saludo**, que recibe un **prop** llamado **nombre** y muestra un mensaje personalizado. Los **props** son valores que se pasan a los componentes para hacerlos dinámicos.</p>
+
+      <h4>React - JSX</h4>
+      <p>JSX es una extensión de sintaxis que permite escribir HTML dentro de JavaScript. Aunque parece HTML, JSX es en realidad JavaScript y se compila a funciones de React. Usar JSX facilita la creación de interfaces de usuario y hace que el código sea más legible.</p>
+
+      <p><strong>Ejemplo de JSX:</strong></p>
+      <pre>
+        <code>
+          const element = &lt;h1&gt;¡Hola, React!&lt;/h1&gt;
+          ReactDOM.render(element, document.getElementById('root'));
+        </code>
+      </pre>
+
+      <h3>2. Node.js</h3>
+      <p><strong>Node.js</strong> es un entorno de ejecución de JavaScript en el servidor. Es especialmente útil para construir aplicaciones web escalables y de alto rendimiento. Node.js permite ejecutar código JavaScript fuera del navegador, lo que lo hace ideal para aplicaciones del lado del servidor, como **APIs**.</p>
+
+      <h4>¿Para qué sirve Node.js?</h4>
+      <p>Node.js es ideal para desarrollar aplicaciones que requieren procesamiento en tiempo real, como chats, aplicaciones de colaboración en línea y servidores web. Además, es muy eficiente para manejar un gran número de conexiones simultáneas gracias a su modelo de **event loop** no bloqueante.</p>
+
+      <h4>¿Cómo instalar Node.js?</h4>
+      <p>Ve a <a href="https://nodejs.org" target="_blank">nodejs.org</a> y descarga la última versión estable. Luego, abre tu terminal y verifica la instalación ejecutando:</p>
+      <pre><code>node -v</code></pre>
+
+      <h3>3. Vite</h3>
+      <p><strong>Vite</strong> es una herramienta moderna para desarrollo de aplicaciones JavaScript que se enfoca en ser **rápida** y **eficiente**. Vite utiliza **ESBuild** para la compilación, lo que permite tiempos de arranque y recarga de página muy rápidos en comparación con otras herramientas como Webpack.</p>
+
+      <h4>¿Para qué sirve Vite?</h4>
+      <p>Vite es excelente para proyectos de **React**, **Vue**, y **Svelte**, y proporciona una experiencia de desarrollo increíblemente rápida gracias a su sistema de **HMR (Hot Module Replacement)**, lo que significa que solo se actualizan los módulos que cambian sin recargar toda la página.</p>
+
+      <h4>¿Cómo instalar Vite?</h4>
+      <p>Para empezar a usar Vite, primero necesitas tener **Node.js** instalado. Luego, puedes crear un nuevo proyecto usando Vite con el siguiente comando:</p>
+      <pre><code>
+        npm create vite@latest nombre-del-proyecto --template react
+      </code></pre>
+      <p>Este comando creará un proyecto de React con Vite. Luego, navega a tu carpeta de proyecto:</p>
+      <pre><code>cd nombre-del-proyecto</code></pre>
+      <p>Y finalmente, instala las dependencias y ejecuta el servidor de desarrollo:</p>
+      <pre><code>npm install</code></pre>
+      <pre><code>npm run dev</code></pre>
+
+      <p>Esto abrirá tu aplicación en <code>http://localhost:3000</code> y podrás ver los cambios en tiempo real.</p>
+
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Alvaro Quintanilla</p>
+  </footer>
+
+</body>
+</html>

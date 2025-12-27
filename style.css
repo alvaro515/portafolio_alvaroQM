@@ -1,0 +1,258 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* Base */
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f2f4f8; /* Color de fondo más suave */
+  color: #333;
+  line-height: 1.7;
+  padding: 0;
+  margin: 0;
+}
+
+/* === Header y Nav === */
+header {
+  background-color: #008c76; /* Color verde suave */
+  color: white;
+  padding: 1.5rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: background-color 0.3s ease;
+}
+
+header:hover {
+  background-color: #006b56; /* Efecto hover para header */
+}
+
+header h1 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s ease;
+  font-size: 1rem;
+}
+
+nav a:hover,
+nav a.active {
+  text-decoration: underline;
+  color: #ffdd00; /* Color amarillo para la acción */
+  transform: scale(1.1); /* Efecto de escala al pasar el ratón */
+}
+
+/* === Main & Cards === */
+main {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 0 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+main:hover {
+  transform: translateY(-5px); /* Sutil animación de desplazamiento */
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #008c76;
+  margin-bottom: 2rem;
+}
+
+.card {
+  background-color: #ffffff;
+  padding: 2.5rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  margin-bottom: 2rem;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px); /* Animación de elevación al pasar el ratón */
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.card h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #005e5c; /* Verde más oscuro */
+  transition: color 0.3s ease;
+}
+
+.card h2:hover {
+  color: #ffdd00; /* Efecto hover para el título */
+}
+
+.card p {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  text-align: justify;
+  line-height: 1.8;
+  color: #555; /* Color de texto más suave */
+}
+
+/* === Botones (Cuaderno) === */
+.consolidados {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 2rem;
+  padding: 0 1rem;
+}
+
+.columna {
+  flex: 1;
+  min-width: 260px;
+  max-width: 400px;
+}
+
+.columna h3 {
+  margin-bottom: 1rem;
+  color: #008c76;
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+.boton-semana {
+  display: block;
+  background-color: #00b39f; /* Fondo verde suave */
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 8px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  font-size: 1.1rem;
+}
+
+.boton-semana:hover {
+  background-color: #006b56; /* Efecto hover más oscuro */
+  transform: scale(1.05); /* Efecto de escala al pasar el ratón */
+}
+
+/* === Lista Bibliografía === */
+.biblio-lista {
+  padding-left: 1.5rem;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  list-style-type: disc;
+}
+
+.biblio-lista li a {
+  color: #008c76;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.biblio-lista li a:hover {
+  color: #ffdd00; /* Cambio de color al hacer hover */
+  text-decoration: underline;
+}
+
+/* === Footer === */
+footer {
+  background-color: #008c76;
+  color: white;
+  text-align: center;
+  padding: 1.5rem 1rem;
+  font-size: 1rem;
+  box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+footer:hover {
+  background-color: #006b56; /* Efecto hover para el pie de página */
+}
+
+/* === Portada con Imagen Circular === */
+.portada-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+  transition: transform 0.3s ease;
+}
+
+.portada-section:hover {
+  transform: translateY(-5px); /* Sutil animación de desplazamiento */
+}
+
+.contenido-portada {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.texto-portada {
+  flex: 1 1 55%;
+  animation: fadeIn 2s ease-out;
+}
+
+.imagen-portada {
+  flex: 1 1 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imagen-portada img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.imagen-portada img:hover {
+  transform: scale(1.1); /* Efecto de zoom en la imagen */
+}
+
+/* Animación de entrada */
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive para pantallas pequeñas */
+@media (max-width: 768px) {
+  .contenido-portada {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .texto-portada {
+    flex: 1 1 100%;
+  }
+
+  .imagen-portada {
+    flex: 1 1 100%;
+  }
+}

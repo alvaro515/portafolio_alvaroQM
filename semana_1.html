@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Semana 1 - Introducción a las Tecnologías Web</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Cabecera -->
+  <header>
+    <h1>Semana 1: Introducción a las Tecnologías Web</h1>
+    <nav>
+      <a href="index.html">Portada</a>
+      <a href="semana_1.html" class="active">Semana 1</a>
+      <a href="semana_2.html">Semana 2</a>
+      <a href="semana_3.html">Semana 3</a>
+      <a href="semana_4.html">Semana 4</a>
+    </nav>
+  </header>
+
+  <!-- Contenido Principal -->
+  <main>
+    <section class="card">
+      <h2>Teoría y Conceptos de la Semana</h2>
+      
+      <h3>1. Soluciones Web</h3>
+      <ul>
+        <li><strong>Sistema Web:</strong> Es una aplicación completamente accesible desde un navegador. A menudo interactúa con bases de datos y otros servicios a través de Internet. Ejemplo: <strong>Gmail</strong> (una aplicación de correo electrónico).</li>
+        <li><strong>Aplicación Web:</strong> Son más complejas, permiten la interacción en tiempo real. Ejemplo: <strong>Google Docs</strong> (aplicación de edición de documentos en línea).</li>
+        <li><strong>Sitio Web:</strong> Conjunto de páginas web interconectadas con contenido generalmente estático. Ejemplo: <strong>Blog personal</strong> o <strong>Sitio corporativo</strong>.</li>
+        <li><strong>Página Web:</strong> Documento único accesible desde un navegador. Ejemplo: <strong>Página de contacto</strong> en un sitio web.</li>
+      </ul>
+
+      <h3>2. Tecnologías Web</h3>
+      <p><strong>HTML</strong>: Lenguaje de marcado para estructurar las páginas web. Definimos los elementos, como encabezados, párrafos, imágenes, enlaces y más.</p>
+      <p><strong>Ejemplo de HTML:</strong></p>
+      <pre>
+        <code>
+          &lt;html&gt;
+            &lt;head&gt;&lt;title&gt;Mi Página&lt;/title&gt;&lt;/head&gt;
+            &lt;body&gt;
+              &lt;h1&gt;Bienvenido a mi página&lt;/h1&gt;
+              &lt;p&gt;Este es un párrafo simple.&lt;/p&gt;
+            &lt;/body&gt;
+          &lt;/html&gt;
+        </code>
+      </pre>
+
+      <p><strong>CSS</strong>: Lenguaje de estilos que se usa para aplicar el diseño visual en las páginas HTML.</p>
+      <p><strong>Ejemplo de CSS:</strong></p>
+      <pre>
+        <code>
+          h1 {
+            color: blue;
+            font-size: 2em;
+          }
+          p {
+            color: gray;
+            font-size: 1.2em;
+          }
+        </code>
+      </pre>
+
+      <p><strong>JavaScript</strong>: Lenguaje de programación que permite hacer las páginas web interactivas.</p>
+      <p><strong>Ejemplo de JavaScript:</strong></p>
+      <pre>
+        <code>
+          function saludo() {
+            alert("¡Hola, bienvenido!");
+          }
+        </code>
+      </pre>
+
+      <h3>3. Cómo Funciona la Web</h3>
+      <p><strong>DNS (Domain Name System):</strong> Convierte nombres de dominio (como google.com) en direcciones IP que las computadoras pueden entender.</p>
+      <p><strong>Protocolo TCP/IP:</strong> Protocolo que permite que los datos viajen por Internet. Define cómo se transmiten los datos.</p>
+      <p><strong>Protocolo HTTP/HTTPS:</strong> Protocolo utilizado para la comunicación entre clientes (navegadores) y servidores. HTTPS es la versión segura de HTTP.</p>
+
+      <h3>4. Roles en el Desarrollo Web</h3>
+      <ul>
+        <li><strong>Frontend:</strong> Desarrolla la parte visible e interactiva de la web.</li>
+        <li><strong>Backend:</strong> Se encarga de la lógica del servidor y de la gestión de datos.</li>
+        <li><strong>Fullstack:</strong> Se maneja tanto en frontend como en backend.</li>
+      </ul>
+
+      <h3>5. Herramienta de Desarrollo - Visual Studio Code</h3>
+      <ul>
+        <li><strong>Visual Studio Code (VSC):</strong> Es un editor de código gratuito muy popular entre los desarrolladores.</li>
+        <li><strong>Extensiones útiles:</strong> Prettier, Emmet, Live Server, etc.</li>
+        <li><strong>Atajos de Teclado:</strong> <code>Ctrl + Shift + P</code> para abrir la paleta de comandos.</li>
+      </ul>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Alvaro Quintanilla</p>
+  </footer>
+
+</body>
+</html>

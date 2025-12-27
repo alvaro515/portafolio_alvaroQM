@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Semana 5 - Desarrollo de Aplicación Front-End con Framework JS</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Cabecera -->
+  <header>
+    <h1>Semana 5: Desarrollo de Aplicación Front-End con Framework JS</h1>
+    <nav>
+      <a href="index.html">Portada</a>
+      <a href="semana_1.html">Semana 1</a>
+      <a href="semana_2.html">Semana 2</a>
+      <a href="semana_3.html">Semana 3</a>
+      <a href="semana_4.html">Semana 4</a>
+      <a href="semana_5.html" class="active">Semana 5</a>
+    </nav>
+  </header>
+
+  <!-- Contenido Principal -->
+  <main>
+    <section class="card">
+      <h2>Teoría y Conceptos de la Semana</h2>
+
+      <h3>1. Estructura y Operación de un Framework Front-End</h3>
+      <p>Un **framework front-end** es un conjunto de herramientas y bibliotecas diseñadas para facilitar la creación de interfaces de usuario en aplicaciones web. Proporcionan una estructura y un flujo de trabajo definidos para desarrollar aplicaciones web eficientes, escalables y fáciles de mantener.</p>
+      <p>El objetivo principal de un framework front-end es facilitar el desarrollo de interfaces de usuario interactivas, de manera que se pueda concentrar más en la lógica de la aplicación y menos en los detalles de la implementación del UI.</p>
+
+      <h4>¿Cómo funcionan?</h4>
+      <p>El **Client Side Rendering (CSR)** es una técnica en la que la mayor parte del renderizado de la página se realiza en el navegador, lo que significa que el servidor solo entrega los archivos iniciales y la lógica de la aplicación, mientras que el navegador se encarga de cargar y renderizar el contenido dinámico.</p>
+      <p>Esto permite una experiencia de usuario más fluida, ya que solo se cargan los datos necesarios y las interacciones no requieren recargar toda la página.</p>
+
+      <h4>Ejemplo de Framework Front-End:</h4>
+      <p>Uno de los frameworks más populares es **React**. En React, la interfaz se divide en componentes, que son piezas reutilizables de la interfaz de usuario.</p>
+
+      <h3>2. Gestión de Dependencias</h3>
+      <p>En el desarrollo moderno de aplicaciones front-end, utilizamos **gestores de dependencias** como **npm** o **yarn** para instalar y gestionar las bibliotecas y herramientas que necesitamos. Estas herramientas permiten instalar paquetes, actualizar versiones y manejar las dependencias de manera eficiente.</p>
+      <p><strong>¿Cómo instalar dependencias?</strong> Usamos los siguientes comandos:</p>
+      <pre>
+        <code>
+          npm install <nombre-del-paquete>   // Instalar una dependencia
+          npm update <nombre-del-paquete>    // Actualizar una dependencia
+        </code>
+      </pre>
+      <p>Además, los **paquetes** de npm o yarn se guardan en un archivo llamado **package.json**, que mantiene un registro de todas las dependencias de tu proyecto.</p>
+
+      <h3>3. Desarrollo Basado en Componentes</h3>
+      <p>En los frameworks modernos como **React**, las interfaces de usuario se construyen utilizando componentes. Un **componente** es una unidad de código autónoma que maneja una parte de la interfaz de usuario. Los componentes pueden ser reutilizados en diferentes partes de la aplicación.</p>
+      <p>Los **componentes** permiten un desarrollo más organizado y modular. Cada componente tiene su propio estado, lógica y vista.</p>
+
+      <h4>JSX: JavaScript XML</h4>
+      <p>**JSX** es una extensión de JavaScript utilizada en React para escribir componentes. Aunque parece una mezcla de HTML y JavaScript, JSX es en realidad un azúcar sintáctico que se compila en JavaScript.</p>
+      <p><strong>Ejemplo de JSX:</strong></p>
+      <pre>
+        <code>
+          const MiComponente = () =&gt; {
+            return (
+              &lt;div&gt;
+                &lt;h1&gt;¡Hola Mundo!&lt;/h1&gt;
+                &lt;p&gt;Este es un ejemplo de JSX.&lt;/p&gt;
+              &lt;/div&gt;
+            );
+          };
+        </code>
+      </pre>
+
+      <h4>Props y Children</h4>
+      <p>En React, los componentes pueden recibir **props** (abreviatura de "properties") que permiten pasar datos desde el componente padre hacia el componente hijo. Además, los componentes pueden tener **children**, que son elementos anidados dentro de un componente.</p>
+      
+      <p><strong>Ejemplo de pasar datos con props:</strong></p>
+      <pre>
+        <code>
+          const Saludo = (props) =&gt; {
+            return &lt;h1&gt;Hola, {props.nombre}!&lt;/h1&gt;
+          };
+
+          // Usando el componente Saludo
+          &lt;Saludo nombre="Juan" /&gt;
+        </code>
+      </pre>
+      
+      <p><strong>Ejemplo de children:</strong> Los children son lo que se coloca dentro de las etiquetas de un componente, como los elementos hijos de un div:</p>
+      <pre>
+        <code>
+          const Contenedor = (props) =&gt; {
+            return &lt;div&gt;{props.children}&lt;/div&gt;
+          };
+
+          // Usando el componente Contenedor
+          &lt;Contenedor&gt;Este es el contenido dentro del contenedor.&lt;/Contenedor&gt;
+        </code>
+      </pre>
+
+      <h3>4. Estilos en Framework JS</h3>
+      <p>En el desarrollo de aplicaciones web modernas, los estilos pueden ser manejados de diferentes maneras. A continuación, veremos algunas de las formas más comunes de aplicar estilos a los componentes:</p>
+
+      <h4>Estilos Inline</h4>
+      <p>Los **estilos inline** se aplican directamente dentro de los componentes utilizando la propiedad <code>style</code> en JSX.</p>
+      <pre>
+        <code>
+          const MiComponente = () =&gt; {
+            return &lt;div style={{color: 'blue', fontSize: '20px'}}&gt;Texto azul y grande&lt;/div&gt;
+          };
+        </code>
+      </pre>
+
+      <h4>Style Sheets (Hojas de Estilo)</h4>
+      <p>Una forma clásica de agregar estilos es utilizando **hojas de estilo externas** (CSS). Este método es común en proyectos más grandes y se usa cuando los estilos son comunes a varios componentes.</p>
+      <p><strong>Ejemplo:</strong> En un archivo CSS:</p>
+      <pre>
+        <code>
+          .mi-clase {
+            color: red;
+            font-size: 18px;
+          }
+        </code>
+      </pre>
+
+      <p>Y luego lo importamos en el archivo JavaScript:</p>
+      <pre>
+        <code>
+          import './styles.css';
+        </code>
+      </pre>
+
+      <h4>Style Modules</h4>
+      <p>Los **módulos de estilo** son una técnica para crear estilos específicos para un componente y asegurarse de que no se filtren en otros componentes.</p>
+      <p><strong>Ejemplo:</strong> Definir un archivo de módulo CSS, como <code>MiComponente.module.css</code>:</p>
+      <pre>
+        <code>
+          .miClase {
+            color: green;
+            font-size: 16px;
+          }
+        </code>
+      </pre>
+      <p>Y luego, importamos y aplicamos el estilo en el componente:</p>
+      <pre>
+        <code>
+          import styles from './MiComponente.module.css';
+
+          const MiComponente = () =&gt; {
+            return &lt;div className={styles.miClase}&gt;Texto verde&lt;/div&gt;
+          };
+        </code>
+      </pre>
+
+      <h4>Frameworks CSS</h4>
+      <p>Los **frameworks CSS** como **Bootstrap** y **Tailwind CSS** también se pueden usar en aplicaciones React. Estos proporcionan clases predefinidas para facilitar el diseño y la estructura de la interfaz de usuario.</p>
+
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Alvaro Quintanilla</p>
+  </footer>
+
+</body>
+</html>

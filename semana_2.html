@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Semana 2 - HTML5, XML y CSS3</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Cabecera -->
+  <header>
+    <h1>Semana 2: HTML5, XML y CSS3</h1>
+    <nav>
+      <a href="index.html">Portada</a>
+      <a href="semana_1.html">Semana 1</a>
+      <a href="semana_2.html" class="active">Semana 2</a>
+      <a href="semana_3.html">Semana 3</a>
+      <a href="semana_4.html">Semana 4</a>
+    </nav>
+  </header>
+
+  <!-- Contenido Principal -->
+  <main>
+    <section class="card">
+      <h2>Teoría y Conceptos de la Semana</h2>
+
+      <h3>1. HTML5</h3>
+      <p><strong>HTML5</strong> es la última versión del estándar HTML (HyperText Markup Language). Este lenguaje se utiliza para estructurar el contenido de las páginas web. Con HTML5, se han introducido una serie de mejoras que permiten la creación de aplicaciones web más potentes y con más funcionalidades.</p>
+
+      <h4>¿Para qué sirve HTML5?</h4>
+      <p>HTML5 se utiliza para estructurar y presentar contenido en la web. Permite agregar texto, imágenes, formularios, videos, audio, entre otros. Las nuevas etiquetas semánticas de HTML5 hacen que el contenido sea más accesible y más fácil de entender por los motores de búsqueda, lo que mejora el SEO (optimización para motores de búsqueda).</p>
+
+      <h4>¿Cómo instalar HTML5?</h4>
+      <p>HTML5 no necesita instalación, ya que es un estándar de marcado que se utiliza directamente en los archivos de tu proyecto. Simplemente debes asegurarte de que tu archivo tenga la extensión <code>.html</code> y que utilices las etiquetas adecuadas.</p>
+      
+      <h4>Ejemplo de Estructura Básica de HTML5:</h4>
+      <pre>
+        <code>
+          &lt;!DOCTYPE html&gt;
+          &lt;html lang="es"&gt;
+            &lt;head&gt;
+              &lt;meta charset="UTF-8"&gt;
+              &lt;title&gt;Mi Página Web&lt;/title&gt;
+            &lt;/head&gt;
+            &lt;body&gt;
+              &lt;h1&gt;Bienvenido a mi página web&lt;/h1&gt;
+              &lt;p&gt;Este es un párrafo de ejemplo.&lt;/p&gt;
+            &lt;/body&gt;
+          &lt;/html&gt;
+        </code>
+      </pre>
+
+      <h4>Nuevas Etiquetas en HTML5</h4>
+      <p>HTML5 introdujo una serie de nuevas etiquetas que mejoran la accesibilidad y la estructura semántica del contenido:</p>
+      <ul>
+        <li><strong>&lt;header&gt;</strong>: Define la cabecera de un documento o una sección.</li>
+        <li><strong>&lt;footer&gt;</strong>: Define el pie de página de un documento o una sección.</li>
+        <li><strong>&lt;article&gt;</strong>: Define un artículo independiente.</li>
+        <li><strong>&lt;section&gt;</strong>: Define una sección de contenido.</li>
+        <li><strong>&lt;nav&gt;</strong>: Define un bloque de navegación.</li>
+        <li><strong>&lt;aside&gt;</strong>: Define contenido adicional, como una barra lateral.</li>
+      </ul>
+
+      <h3>2. XML</h3>
+      <p><strong>XML (eXtensible Markup Language)</strong> es un lenguaje de marcado que se utiliza para almacenar y transportar datos. A diferencia de HTML, XML no tiene etiquetas predefinidas y permite que los usuarios definan sus propias etiquetas para describir los datos.</p>
+
+      <h4>¿Para qué sirve XML?</h4>
+      <p>XML se utiliza principalmente para representar datos de manera estructurada. Es especialmente útil para intercambiar información entre sistemas diferentes. A diferencia de HTML, que está diseñado para mostrar contenido, XML solo describe los datos y su estructura.</p>
+
+      <h4>¿Cómo instalar XML?</h4>
+      <p>XML no requiere instalación. Es simplemente un formato de texto basado en etiquetas. Solo necesitas crear archivos con extensión <code>.xml</code> para empezar a trabajar con XML.</p>
+
+      <h4>Ejemplo de Documento XML:</h4>
+      <pre>
+        <code>
+          &lt;libros&gt;
+            &lt;libro&gt;
+              &lt;titulo&gt;El Gran Libro&lt;/titulo&gt;
+              &lt;autor&gt;Juan Pérez&lt;/autor&gt;
+            &lt;/libro&gt;
+            &lt;libro&gt;
+              &lt;titulo&gt;La Aventura de la Vida&lt;/titulo&gt;
+              &lt;autor&gt;María López&lt;/autor&gt;
+            &lt;/libro&gt;
+          &lt;/libros&gt;
+        </code>
+      </pre>
+
+      <h3>3. CSS3</h3>
+      <p><strong>CSS3</strong> es la tecnología utilizada para diseñar la apariencia de las páginas web. Con CSS3, se pueden aplicar estilos como colores, fuentes, márgenes, bordes, y efectos de transición y animación, entre otros.</p>
+
+      <h4>¿Para qué sirve CSS3?</h4>
+      <p>CSS3 se utiliza para aplicar estilos a los elementos HTML de una página web. Permite modificar la disposición de los elementos en la página, su apariencia visual, y cómo interactúan con el usuario (por ejemplo, con animaciones).</p>
+
+      <h4>¿Cómo instalar CSS3?</h4>
+      <p>Al igual que con HTML5, **CSS3 no requiere instalación**. Solo necesitas crear un archivo con extensión <code>.css</code> y vincularlo en tu documento HTML utilizando la etiqueta <code>&lt;link&gt;</code>.</p>
+
+      <h4>Ejemplo de cómo usar CSS3:</h4>
+      <pre>
+        <code>
+          /* Este es un archivo CSS */
+          h1 {
+            color: #ff6347; /* Color tomate */
+            font-size: 3rem;
+          }
+
+          p {
+            color: #4682b4; /* Color azul acero */
+            font-size: 1.5rem;
+          }
+        </code>
+      </pre>
+
+      <h4>Flexbox y Grid Layout en CSS3</h4>
+      <p>CSS3 introduce dos poderosas herramientas para crear diseños responsivos:</p>
+      <ul>
+        <li><strong>Flexbox:</strong> Permite alinear y distribuir elementos dentro de un contenedor de forma flexible, independientemente de su tamaño.</li>
+        <li><strong>Grid Layout:</strong> Permite crear diseños de cuadrícula complejos con filas y columnas, haciendo que los diseños sean mucho más fáciles de manejar.</li>
+      </ul>
+
+      <h4>Ejemplo de Flexbox:</h4>
+      <pre>
+        <code>
+          .contenedor {
+            display: flex;
+            justify-content: space-between; /* Espaciado entre los elementos */
+          }
+          .elemento {
+            width: 30%;
+          }
+        </code>
+      </pre>
+
+      <h4>Ejemplo de Grid Layout:</h4>
+      <pre>
+        <code>
+          .contenedor {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* 3 columnas iguales */
+          }
+          .elemento {
+            background-color: #f0f0f0;
+            padding: 20px;
+          }
+        </code>
+      </pre>
+
+      <h3>4. Diseño Responsivo</h3>
+      <p>El diseño responsivo asegura que las páginas web se vean bien en cualquier dispositivo, desde una computadora de escritorio hasta un teléfono móvil.</p>
+      <p>Para lograr un diseño responsivo, usamos **media queries** en CSS, que nos permiten aplicar estilos diferentes según el tamaño de la pantalla del dispositivo.</p>
+
+      <h4>Ejemplo de Media Query:</h4>
+      <pre>
+        <code>
+          @media (max-width: 768px) {
+            body {
+              background-color: #f0f0f0;
+            }
+            h1 {
+              font-size: 1.5rem;
+            }
+          }
+        </code>
+      </pre>
+
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Alvaro Quintanilla</p>
+  </footer>
+
+</body>
+</html>
